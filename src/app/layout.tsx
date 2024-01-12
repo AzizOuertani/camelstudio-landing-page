@@ -1,17 +1,30 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Roboto_Slab } from "next/font/google";
+import localFont from "next/font/local";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
-
+const TrashHandFont = localFont({
+  src: "@/fonts/TrashHand.ttf",
+  weight: "900",
+  display: "swap",
+  variable: "--font-thrashand",
+});
+const Roboto_slab = Roboto_Slab({
+  subsets: ["latin"],
+  weight: "600",
+  display: "swap",
+  variable: "--font-roboto",
+});
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${(Roboto_slab.variable, TrashHandFont.variable)} `}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
