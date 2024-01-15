@@ -1,11 +1,16 @@
 import Image from "next/image";
-//TODO : fix the responsive 
+//TODO : fix the responsive
 export default function Hero() {
   return (
     <div className="bg-gray-900">
       <header className="absolute inset-x-0 top-5 z-50 mb-24">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <Image src="/Logo.png" alt="" width={500} height={500} />{" "}
+          <Image
+            src="/Logo.png"
+            alt="logo Camel Studio"
+            width={500}
+            height={500}
+          />{" "}
         </div>
       </header>
 
@@ -41,16 +46,12 @@ export default function Hero() {
               <h1 className="font-raleway  text-white text-4xl ">
                 📱 Web/mobile app
               </h1>
-              <h1 className="font-roboto  text-white text-4xl ">🔌 API </h1>
+              <h1 className="font-raleway  text-white text-4xl ">🔌 API </h1>
             </div>
             <p className="font-raleway text-4xl text-gray-50 mb-24">
               Au Camel Studio on sait comment garder la tête froide même dans
-              les projets les plus chauds.
-              <span className="font-thrashand text-6xl text-gray-50">
-                {" "}
-                Pas de bosses,
-              </span>{" "}
-              que des solutions.
+              les projets les plus chauds. <br /> Pas de bosses, que des
+              solutions.
             </p>
           </div>
         </div>
