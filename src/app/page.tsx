@@ -1,11 +1,13 @@
 "use client";
 import Hero from "@/components/hero";
 import Service from "@/components/services";
+import AboutUs from "@/components/aboutUs";
 export default function Home() {
   return (
     <main>
       <Hero />
       <Service />
+      <AboutUs />
     </main>
   );
 }
