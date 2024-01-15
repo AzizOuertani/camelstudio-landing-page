@@ -13,10 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-    },
-    fontFamily: {
-      thrashand: ["var(--font-thrashand)"],
-      roboto_slab: ["var(--font-roboto)"],
+      fontFamily: {
+        thrashand: ["var(--font-thrashand)"],
+        roboto: ["var(--font-roboto)"],
+      },
     },
   },
   plugins: [],
