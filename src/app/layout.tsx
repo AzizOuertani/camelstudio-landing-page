@@ -1,4 +1,4 @@
-import { Roboto_Slab } from "next/font/google";
+import { Roboto_Slab, Raleway } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 const TrashHandFont = localFont({
@@ -7,13 +7,12 @@ const TrashHandFont = localFont({
   display: "swap",
   variable: "--font-thrashand",
 });
-const Roboto_slab = Roboto_Slab({
-  subsets: ["latin"],
-  weight: "600",
-  display: "swap",
-  variable: "--font-roboto",
-});
 
+const Raleway_Font = Raleway({
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--font-raleway",
+});
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${(Roboto_slab.variable, TrashHandFont.variable)} `}>
+      <body className={`${(Raleway_Font.variable, TrashHandFont.variable)} `}>
         {children}
       </body>
     </html>

@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         thrashand: ["var(--font-thrashand)"],
-        roboto: ["var(--font-roboto)"],
+        raleway: ["var(--font-raleway)"],
       },
     },
   },
