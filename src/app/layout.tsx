@@ -1,9 +1,8 @@
 import { Roboto_Slab } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-
 const TrashHandFont = localFont({
-  src: "@/fonts/TrashHand.ttf",
+  src: "../fonts/TrashHand.ttf",
   weight: "900",
   display: "swap",
   variable: "--font-thrashand",
