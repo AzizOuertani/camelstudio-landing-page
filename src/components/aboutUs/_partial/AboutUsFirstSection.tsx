@@ -5,18 +5,17 @@ const AboutUsFirstSection = () => {
   return (
     <div className="bg-blue ">
       <div className="mx-auto  ">
-        <div className="relative isolate overflow-hidden bg-primary-400 px-6 py-20  sm:px-10 sm:py-24 lg:py-24 xl:px-24">
+        <div className="relative isolate overflow-hidden bg-primary-400 px-6 py-10  sm:px-10 sm:py-24 lg:py-10 xl:px-24">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
             <div className=" space-y-12 lg:row-start-2 lg:max-w-2xl ">
               <section>
-                <h1 className="text-7xl font-thrashand  font-bold text-white ">
+                <h1 className="text-4xl sm:text-6xl font-thrashand  font-bold text-white ">
                   Qui sommes-nous ?
                 </h1>
-                <h3 className="text-3xl tracking-tight text-white ">
+                <p className="mt-6 text-xl  leading-8 text-white">
                   Une équipe jeune mais pas novice, soudée et qui connaît le
                   marché européen.
-                </h3>
-                <p className="mt-6 text-xl  leading-8 text-white">
+                  <br />
                   <span className="font-thrashand text-4xl text-gray-50">
                     Pas de blabla ici.
                   </span>{" "}
@@ -28,7 +27,7 @@ const AboutUsFirstSection = () => {
                 </p>
               </section>
               <section>
-                <h1 className="text-7xl font-thrashand  font-bold text-white ">
+                <h1 className="text-4xl sm:text-6xl font-thrashand  font-bold text-white ">
                   Ce {" qu'o"}n sait faire ?
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-white">

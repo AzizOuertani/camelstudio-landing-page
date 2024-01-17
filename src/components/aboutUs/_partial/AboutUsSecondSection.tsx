@@ -1,15 +1,16 @@
 import Image from "next/image";
 import React from "react";
+import CSTeam from "../../../../public/csTeam2.jpg";
 
 const AboutUsSecondSection = () => {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
-      <div className="mx-auto pr-6 lg:pr-8">
+      <div className="mx-auto px-6 lg:pr-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:ml-auto lg:pl-4 lg:pt-4">
             <div className=" space-y-12 lg:row-start-2 lg:max-w-5xl  ">
               <section>
-                <h1 className="text-7xl font-thrashand  font-bold text-black ">
+                <h1 className="text-4xl sm:text-6xl font-thrashand  font-bold text-black ">
                   Pourquoi nous ?
                 </h1>
 
@@ -36,7 +37,7 @@ const AboutUsSecondSection = () => {
                 </p>
               </section>
               <section>
-                <h1 className="text-7xl font-thrashand  font-bold text-black ">
+                <h1 className=" font-thrashand  font-bold text-black text-4xl sm:text-6xl ">
                   On bosse comment ?
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-black">
@@ -48,13 +49,11 @@ const AboutUsSecondSection = () => {
               </section>
             </div>
           </div>
-          <div className="flex items-start justify-end lg:order-first pt-16  ">
+          <div className="flex items-start justify-end lg:order-first pt-10  ">
             <Image
-              src="/csTeam2.jpg"
+              src={CSTeam}
               alt="Product screenshot"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-primary-400/10 sm:w-[57rem] "
-              width={525}
-              height={294}
             />
           </div>
         </div>
