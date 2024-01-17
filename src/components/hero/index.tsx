@@ -1,17 +1,126 @@
 import Image from "next/image";
-//TODO : fix the responsive
+import { Dialog } from "@headlessui/react";
+import { useState } from "react";
+import { HiXMark, HiBars3 } from "react-icons/hi2";
+
 export default function Hero() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="bg-gray-900">
-      <header className="absolute inset-x-0 top-5 z-50 mb-24">
-        <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-          <Image
-            src="/Logo.png"
-            alt="logo Camel Studio"
-            width={500}
-            height={500}
-          />{" "}
-        </div>
+      <header className="absolute inset-x-0 top-0 z-50">
+        <nav
+          className="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
+          <div className="flex lg:flex-1">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <Image
+                src="/Logo.png"
+                alt="logo Camel Studio"
+                width={200}
+                height={500}
+              />{" "}
+            </a>
+          </div>
+          <div className="flex lg:hidden">
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              onClick={() => setMobileMenuOpen(true)}
+            >
+              <span className="sr-only">Open main menu</span>
+              <HiBars3 className="h-6 w-6" aria-hidden="true" />
+            </button>
+          </div>
+          <div className="hidden lg:flex lg:gap-x-12 ">
+            <a
+              href={"#"}
+              className="text-2xl font-semibold leading-6 text-white"
+            >
+              Home
+            </a>
+            <a
+              href={"#"}
+              className="text-2xl font-semibold leading-6 text-white"
+            >
+              Services
+            </a>
+            <a
+              href={"#"}
+              className="text-2xl font-semibold leading-6 text-white"
+            >
+              About Us
+            </a>
+            <a
+              href={"#"}
+              className="text-2xl font-semibold leading-6 text-white"
+            >
+              Contact Us
+            </a>
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+        </nav>
+        <Dialog
+          as="div"
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
+          <div className="fixed inset-0 z-50" />
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-center justify-between">
+              <a href="#" className="-m-1.5 p-1.5">
+                <span className="sr-only">Your Company</span>
+                <Image
+                  src="/Logo.png"
+                  alt="logo Camel Studio"
+                  width={200}
+                  height={500}
+                />{" "}
+              </a>
+              <button
+                type="button"
+                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span className="sr-only">Close menu</span>
+                <HiXMark className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </div>
+            <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide-gray-500/10">
+                <div className="space-y-2 py-6">
+                  <a
+                    href={"#"}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href={"#"}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Services
+                  </a>
+                  <a
+                    href={"#"}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href={"#"}
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Dialog.Panel>
+        </Dialog>
       </header>
 
       <div className="relative isolate overflow-hidden pt-14">
@@ -34,26 +143,21 @@ export default function Hero() {
           />
         </div>
 
-        <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-32">
-          <div className="text-center justify-between">
-            <h1 className="font-raleway text-4xl font-bold tracking-tight text-white sm:text-6xl mb-24">
-              Une boîte de devs agiles et résilients
-            </h1>
-
-            <div className="inline-flex px-7 py-3.5 items-start justify-center rounded-3xl bg-opacity-10 bg-white backdrop-blur-11 shadow-md space-x-6 mb-24">
-              <h1 className="font-raleway text-white text-4xl">🖥 Front</h1>
-              <h1 className="font-raleway text-white text-4xl">🛠 Back</h1>
-              <h1 className="font-raleway  text-white text-4xl ">
-                📱 Web/mobile app
-              </h1>
-              <h1 className="font-raleway  text-white text-4xl ">🔌 API </h1>
-            </div>
-            <p className="font-raleway text-4xl text-gray-50 mb-24">
-              Au Camel Studio on sait comment garder la tête froide même dans
-              les projets les plus chauds. <br /> Pas de bosses, que des
-              solutions.
-            </p>
+        <div className="mx-auto max-w-6xl  py-32 sm:py-48 lg:py-32 text-center">
+          <div className="inline-flex px-2 sm:px-7 py-3.5 items-start justify-center rounded-3xl bg-opacity-10 bg-white backdrop-blur-11 sm:space-x-6 space-x-1 shadow-md  mb-6 text-white text-base sm:text-xl">
+            <h1>🖥 Front</h1>
+            <h1>🛠 Back</h1>
+            <h1>📱 Web/mobile app</h1>
+            <h1>🔌 API </h1>
           </div>
+          <h1 className=" text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
+            Une boîte de devs agiles et résilients
+            <br />
+          </h1>
+          <p className="font-raleway text-2xl text-gray-50 mb-6 max-w-6xl ">
+            Au Camel Studio on sait comment garder la tête froide même dans les
+            projets les plus chauds. <br /> Pas de bosses, que des solutions.
+          </p>
         </div>
       </div>
     </div>
