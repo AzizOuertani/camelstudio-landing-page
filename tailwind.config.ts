@@ -15,7 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         thrashand: ["var(--font-thrashand)"],
-        raleway: ["var(--font-raleway)"],
+        raleway: ['"var(--font-raleway)"'],
       },
       colors: {
         white: "#ffffff",
