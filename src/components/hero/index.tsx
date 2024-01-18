@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Dialog } from "@headlessui/react";
 import { useState } from "react";
 import { HiXMark, HiBars3 } from "react-icons/hi2";
+import Link from "next/link";
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,28 +37,23 @@ export default function Hero() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12 font-raleway">
             <a
-              href={"#"}
+              href={"#prestaion"}
               className="text-2xl font-semibold leading-6 text-white"
             >
-              Home
+              Prestations
             </a>
             <a
-              href={"#"}
+              href={"#aboutUs"}
               className="text-2xl font-semibold leading-6 text-white"
             >
-              Services
+              À propos
             </a>
+
             <a
-              href={"#"}
+              href={"#contactUs"}
               className="text-2xl font-semibold leading-6 text-white"
             >
-              About Us
-            </a>
-            <a
-              href={"#"}
-              className="text-2xl font-semibold leading-6 text-white"
-            >
-              Contact Us
+              Contactez-nous
             </a>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
@@ -93,28 +89,22 @@ export default function Hero() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6 font-raleway">
                   <a
-                    href={"#"}
+                    href={"#prestaion"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Home
+                    Prestations
                   </a>
                   <a
-                    href={"#"}
+                    href={"#aboutUs"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Services
+                    À propos
                   </a>
                   <a
-                    href={"#"}
+                    href={"#contactUs"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    About Us
-                  </a>
-                  <a
-                    href={"#"}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Contact Us
+                    Contactez-nous
                   </a>
                 </div>
               </div>
@@ -162,10 +152,16 @@ export default function Hero() {
             Une boîte de devs agiles et résilients
             <br />
           </h1>
-          <p className="font-raleway text-2xl text-gray-50  max-w-6xl ">
+          <p className="font-raleway text-2xl text-gray-50  max-w-6xl mb-10 ">
             Au Camel Studio on sait comment garder la tête froide même dans les
             projets les plus chauds. <br /> Pas de bosses, que des solutions.
           </p>
+          <Link
+            href="#contactUs"
+            className="rounded-md hover:bg-primary-400 hover:text-white px-8 py-4 text-xl font-semibold text-white shadow-sm bg-white text-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Contactez-nous
+          </Link>
         </div>
       </div>
     </div>
