@@ -1,4 +1,4 @@
-import { Roboto_Slab, Raleway } from "next/font/google";
+import { Raleway } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 const TrashHandFont = localFont({
