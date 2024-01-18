@@ -143,7 +143,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="mx-auto max-w-6xl  py-32 sm:py-48 lg:py-32 text-center">
+        <div className="mx-auto max-w-6xl px-8 py-32 sm:py-48 lg:py-32 text-center">
           <div className="  inline-flex px-2 sm:px-7 py-3.5 items-start justify-center rounded-3xl bg-opacity-10 bg-white backdrop-blur-11 sm:space-x-6 space-x-1 shadow-md  mb-6 text-white text-base sm:text-xl">
             <h1>
               🖥 <span className="font-raleway">Front</span>

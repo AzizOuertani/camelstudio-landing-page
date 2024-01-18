@@ -6,13 +6,13 @@ export default function Services() {
     <section
       id="prestaion"
       aria-label="Les Prestations de CamelStudio"
-      className="py-20 sm:py-14 grid"
+      className="py-20 sm:py-14 grid px-4"
     >
       <h1 className="place-self-center text-6xl font-thrashand">
         Nos prestations
       </h1>
-      <h2 className="place-self-center text-4xl font-raleway pt-5">
-        Découvrer nos service
+      <h2 className="place-self-center text-center text-4xl font-raleway pt-5 font-semi-bold">
+        Inconnus de Nous ? Explorez Nos Prestations Exceptionnelles
       </h2>
       <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
         <ul

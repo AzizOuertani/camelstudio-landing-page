@@ -37,8 +37,8 @@ const WorkWithUs = () => {
                 {" c'"}est pourquoi on offre deux options flexibles pour
                 répondre à vos attentes.
               </p>
-              <div className="text-white space-y-4 mt-6">
-                <div className="rounded-2xl border border-gray-200 p-8">
+              <div className=" grid grid-cols-1 xl:grid-cols-2	 text-white space-y-6 xl:space-y-0 xl:space-x-6 mt-6">
+                <div className="rounded-2xl max-w-xl lg:max-w-md border border-gray-200 p-8">
                   <h2 className="text-3xl sm:text-4xl">💪👩‍💻🚀</h2>
                   <h3 className="mt-6 text-4xl font-semibold font-thrashand sm:text-6xl">
                     Option 1
@@ -52,7 +52,7 @@ const WorkWithUs = () => {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-gray-200 p-8">
+                <div className="rounded-2xl  max-w-xl lg:max-w-md border border-gray-200 p-8">
                   <h2 className="text-3xl sm:text-4xl">🤝👨‍💻🌐</h2>
                   <h3 className="mt-6 text-4xl font-semibold font-thrashand sm:text-6xl">
                     Option 2
