@@ -34,7 +34,7 @@ export default function Hero() {
               <HiBars3 className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12 ">
+          <div className="hidden lg:flex lg:gap-x-12 font-raleway">
             <a
               href={"#"}
               className="text-2xl font-semibold leading-6 text-white"
@@ -91,7 +91,7 @@ export default function Hero() {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="space-y-2 py-6 font-raleway">
                   <a
                     href={"#"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -144,17 +144,25 @@ export default function Hero() {
         </div>
 
         <div className="mx-auto max-w-6xl  py-32 sm:py-48 lg:py-32 text-center">
-          <div className="inline-flex px-2 sm:px-7 py-3.5 items-start justify-center rounded-3xl bg-opacity-10 bg-white backdrop-blur-11 sm:space-x-6 space-x-1 shadow-md  mb-6 text-white text-base sm:text-xl">
-            <h1>🖥 Front</h1>
-            <h1>🛠 Back</h1>
-            <h1>📱 Web/mobile app</h1>
-            <h1>🔌 API </h1>
+          <div className="  inline-flex px-2 sm:px-7 py-3.5 items-start justify-center rounded-3xl bg-opacity-10 bg-white backdrop-blur-11 sm:space-x-6 space-x-1 shadow-md  mb-6 text-white text-base sm:text-xl">
+            <h1>
+              🖥 <span className="font-raleway">Front</span>
+            </h1>
+            <h1>
+              🛠 <span className="font-raleway">Back</span>
+            </h1>
+            <h1>
+              📱 <span className="font-raleway">Web/mobile app</span>
+            </h1>
+            <h1>
+              🔌 <span className="font-raleway">API</span>
+            </h1>
           </div>
-          <h1 className=" text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
+          <h1 className="font-raleway  text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
             Une boîte de devs agiles et résilients
             <br />
           </h1>
-          <p className="font-raleway text-2xl text-gray-50 mb-6 max-w-6xl ">
+          <p className="font-raleway text-2xl text-gray-50  max-w-6xl ">
             Au Camel Studio on sait comment garder la tête froide même dans les
             projets les plus chauds. <br /> Pas de bosses, que des solutions.
           </p>

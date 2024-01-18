@@ -12,14 +12,21 @@ const AboutUsFirstSection = () => {
                 <h1 className="text-4xl sm:text-6xl font-thrashand  font-bold text-white ">
                   Qui sommes-nous ?
                 </h1>
-                <p className="mt-6 text-xl  leading-8 text-white">
+                <p className="mt-6 text-xl  leading-8 text-white font-raleway">
                   Une équipe jeune mais pas novice, soudée et qui connaît le
                   marché européen.
                   <br />
-                  <span className="font-thrashand text-4xl text-gray-50">
+                  <span className=" text-3xl text-gray-50 font-bold">
                     Pas de blabla ici.
                   </span>{" "}
-                  On code, on design, on résout des problèmes. Notre équipe ?
+                  On code, on design, on résout des problèmes.
+                </p>
+              </section>
+              <section>
+                <h1 className="text-4xl sm:text-6xl font-thrashand  font-bold text-white ">
+                  Notre équipe ?
+                </h1>
+                <p className="mt-6 text-xl  leading-8 text-white font-raleway">
                   Des gens sympas qui aiment ce
                   {" qu'i"}ls font et qui le font bien. On sait ce qui se passe
                   sur le marché européen, et on sait comment {" s'y "}prendre
@@ -30,7 +37,7 @@ const AboutUsFirstSection = () => {
                 <h1 className="text-4xl sm:text-6xl font-thrashand  font-bold text-white ">
                   Ce {" qu'o"}n sait faire ?
                 </h1>
-                <p className="mt-6 text-xl leading-8 text-white">
+                <p className="mt-6 text-xl leading-8 text-white font-raleway">
                   On fait du développement sur mesure, des applications web
                   fluides et des solutions digitales qui marchent. On {"n'a"}{" "}
                   pas de formules magiques, juste du bon boulot.  On est sympa,
