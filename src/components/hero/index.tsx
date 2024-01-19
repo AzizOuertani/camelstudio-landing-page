@@ -32,7 +32,7 @@ export default function Hero() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <HiBars3 className="h-6 w-6" aria-hidden="true" />
+              <HiBars3 className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12 font-raleway">
@@ -46,14 +46,14 @@ export default function Hero() {
               href={"#aboutUs"}
               className="text-2xl font-semibold leading-6 text-white"
             >
-              À propos
+              À Propos
             </a>
 
             <a
-              href={"#contactUs"}
+              href={"#workWithUs"}
               className="text-2xl font-semibold leading-6 text-white"
             >
-              Contactez-nous
+              Travailler Avec Nous
             </a>
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
@@ -82,7 +82,7 @@ export default function Hero() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <HiXMark className="h-6 w-6" aria-hidden="true" />
+                <HiXMark className="h-6 w-6 " aria-hidden="true" />
               </button>
             </div>
             <div className="mt-6 flow-root">
@@ -101,10 +101,10 @@ export default function Hero() {
                     À propos
                   </a>
                   <a
-                    href={"#contactUs"}
+                    href={"#workWithUs"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Contactez-nous
+                    Travailler Avec Nous
                   </a>
                 </div>
               </div>
@@ -157,8 +157,8 @@ export default function Hero() {
             projets les plus chauds. <br /> Pas de bosses, que des solutions.
           </p>
           <Link
-            href="#contactUs"
-            className="rounded-md hover:bg-primary-400 hover:text-white px-8 py-4 text-xl font-semibold text-white shadow-sm bg-white text-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            href="mailto:contact@camelstudiotunisie.com"
+            className="rounded-md hover:bg-primary-400 hover:text-white px-8 py-4 text-xl font-semibold hover:text-white shadow-sm bg-white text-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Contactez-nous
           </Link>
