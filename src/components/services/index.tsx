@@ -12,7 +12,7 @@ export default function Services() {
         Nos prestations
       </h1>
       <h2 className="place-self-center text-center text-4xl font-raleway pt-5 font-semi-bold">
-        Inconnus de Nous ? Explorez Nos Prestations Exceptionnelles
+        Vous ne nous connaissez pas ? Explorez nos prestations !{" "}
       </h2>
       <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
         <ul
