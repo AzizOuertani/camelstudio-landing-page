@@ -3,7 +3,7 @@ import React from "react";
 import TeamConf from "../../../public/Team_Conf.jpg";
 const WorkWithUs = () => {
   return (
-    <div className="relative bg-primary-400">
+    <div className="relative bg-primary-400" id="workWithUs">
       <div className="mx-auto max-w-9xl lg:flex lg:justify-between lg:pr-24 lg:ml-80 xl:justify-end">
         <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
           <div className="relative h-80 lg:-ml-80 lg:h-auto lg:w-full lg:grow xl:ml-0">
@@ -40,8 +40,9 @@ const WorkWithUs = () => {
               <div className=" grid grid-cols-1 xl:grid-cols-2	 text-white space-y-6 xl:space-y-0 xl:space-x-6 mt-6">
                 <div className="rounded-2xl max-w-xl lg:max-w-md border border-gray-200 p-8">
                   <h2 className="text-3xl sm:text-4xl">💪👩‍💻🚀</h2>
-                  <h3 className="mt-6 text-4xl font-semibold font-thrashand sm:text-6xl">
-                    Option 1
+                  <h3 className="mt-6 text-4xl font-semibold font-thrashand sm:text-5xl">
+                    Option 1,
+                    <br /> vous avez déjà une équipe à booster :
                   </h3>
                   <p className="mt-2  ">
                     Vous avez déjà une équipe en place et vous voulez la booster
@@ -54,8 +55,9 @@ const WorkWithUs = () => {
 
                 <div className="rounded-2xl  max-w-xl lg:max-w-md border border-gray-200 p-8">
                   <h2 className="text-3xl sm:text-4xl">🤝👨‍💻🌐</h2>
-                  <h3 className="mt-6 text-4xl font-semibold font-thrashand sm:text-6xl">
-                    Option 2
+                  <h3 className="mt-6 text-4xl font-semibold font-thrashand sm:text-5xl">
+                    Option 2,
+                    <br /> votre équipe {" c'"}est nous :
                   </h3>
                   <p className="mt-2  ">
                     Vous préférez déléguer {" l'"}intégralité de votre projet à
