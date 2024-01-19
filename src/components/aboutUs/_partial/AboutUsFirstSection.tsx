@@ -13,8 +13,8 @@ const AboutUsFirstSection = () => {
                   Qui sommes-nous ?
                 </h1>
                 <p className=" text-xl  leading-8 text-white font-raleway">
-                  Une équipe jeune mais pas novice, soudée et qui connaît le
-                  marché européen.
+                  Une équipe jeune, soudée en quête de nouvelles expériences et
+                  de nouveau projets.
                   <br />
                   <span className=" text-2xl text-gray-50 font-bold">
                     Pas de blabla ici.
@@ -39,9 +39,8 @@ const AboutUsFirstSection = () => {
                 </h1>
                 <p className=" text-xl leading-8 text-white font-raleway">
                   On fait du développement sur mesure, des applications web
-                  fluides et des solutions digitales qui marchent. On {"n'a"}{" "}
-                  pas de formules magiques, juste du bon boulot.  On est sympa,
-                  mais surtout on est pros.
+                  fluides et des solutions digitales qui marchent. On {" n'"}a
+                  pas de formules magiques, juste du bon boulot.
                 </p>
               </section>
             </div>

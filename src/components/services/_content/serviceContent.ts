@@ -7,19 +7,19 @@ export const serviceContent = [
   },
 
   {
-    title: "Exploration mobile",
+    title: "Application mobile",
     description:
       "Plongez dans le monde mobile avec nos applications spécialement conçues pour vos aventures sur iOS et Android. Ici, on se démène pour vous offrir une expérience utilisateur exceptionnelle, où que vous soyez.",
     icon: "📱",
   },
   {
-    title: "Design UX/UI malin",
+    title: "Design UX/UI",
     description:
       "Notre équipe crée des interfaces qui fonctionnent bien, propres et au goût du jour. Pas de trucs tape-à-l'œil, mais des designs intelligents.",
     icon: "🎨",
   },
   {
-    title: "Guide tech",
+    title: "Conseil tech",
     description:
       "On n'est pas que des codeurs, on est là pour vous guider dans le monde de la tech et être votre allié dans vos prises de décisions.",
     icon: "📚",
@@ -31,7 +31,7 @@ export const serviceContent = [
     icon: "🗣️ ",
   },
   {
-    title: "Gestion de projet carrée",
+    title: "Gestion de projet",
     description:
       "On prend en charge votre projet et on le mène à bien. Peu importe l’étape de son avancement, on saura s’y greffer et le faire décoller",
     icon: "🏗️",
