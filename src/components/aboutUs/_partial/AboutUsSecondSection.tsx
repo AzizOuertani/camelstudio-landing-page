@@ -8,35 +8,35 @@ const AboutUsSecondSection = () => {
       <div className="mx-auto px-6 lg:pr-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:ml-auto lg:pl-4 lg:pt-4">
-            <div className=" space-y-12 lg:row-start-2 lg:max-w-5xl  font-raleway ">
-              <section>
+            <div className=" space-y-20 lg:row-start-2 lg:max-w-5xl  font-raleway ">
+              <section className="space-y-2">
                 <h1 className="text-4xl sm:text-6xl font-thrashand  font-bold text-black ">
                   Pourquoi nous ?
                 </h1>
 
-                <p className="mt-6 text-xl  leading-8 text-black">
-                  <span className=" text-3xl text-gray-800 font-bold">
+                <p className="text-xl  leading-8 text-black">
+                  <span className=" text-2xl text-gray-800 font-bold">
                     🛠️ Pas de blabla, que du boulot :
                   </span>{" "}
                   On va droit au but. Pas de promesses vides, juste des
                   résultats concrets.
                 </p>
                 <p className="mt-6 text-xl  leading-8 text-black">
-                  <span className=" text-3xl text-gray-800 font-bold">
+                  <span className=" text-2xl text-gray-800 font-bold">
                     🚀 Jeunes, mais pas novices :
                   </span>{" "}
                   On est jeunes, mais on sait ce {" qu'"}on fait. Une bonne
                   énergie et un bon mindset.
                 </p>
                 <p className="mt-6 text-xl  leading-8 text-black">
-                  <span className="text-3xl text-gray-800 font-bold">
+                  <span className="text-2xl text-gray-800 font-bold">
                     💰 Des prix raisonnables :
                   </span>{" "}
                   On est basés en Tunisie, alors nos tarifs sont cool. Qualité
                   pro, sans se ruiner.
                 </p>
               </section>
-              <section>
+              <section className="space-y-2">
                 <h1 className=" font-thrashand  font-bold text-black text-4xl sm:text-6xl ">
                   On bosse comment ?
                 </h1>
