@@ -11,9 +11,7 @@ const Service = ({ icon, title, description }: ServiceType) => {
       <h3 className="mt-6 font-semibold text-gray-900 font-raleway text-xl">
         {title}
       </h3>
-      <p className="mt-2 font-raleway text-gray-700 font-raleway text-lg">
-        {description}
-      </p>
+      <p className="mt-2 font-raleway text-gray-700  text-lg">{description}</p>
     </li>
   );
 };

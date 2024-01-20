@@ -52,7 +52,7 @@ const AboutUsSecondSection = () => {
           <div className="flex items-start justify-end lg:order-first pt-10  ">
             <Image
               src={CSTeam}
-              alt="Product screenshot"
+              alt="Camel Studio Team"
               className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-primary-400/10 sm:w-[57rem] "
             />
           </div>

@@ -46,7 +46,7 @@ const AboutUsFirstSection = () => {
             </div>
             <Image
               src="/CSTeamInTheDesert.jpg"
-              alt="Product screenshot"
+              alt="CamelStudio Team In The Desert"
               className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
               width={592}
               height={245}

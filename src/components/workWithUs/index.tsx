@@ -3,19 +3,17 @@ import React from "react";
 import TeamConf from "../../../public/Team_Conf.jpg";
 const WorkWithUs = () => {
   return (
-    <div className="relative bg-primary-400" id="workWithUs">
-      <div className="mx-auto max-w-9xl lg:flex lg:justify-between lg:pr-24 lg:ml-80 xl:justify-end">
-        <div className="lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2">
-          <div className="relative h-80 lg:-ml-80 lg:h-auto lg:w-full lg:grow xl:ml-0">
-            <Image
-              className="absolute inset-0 max-w-none h-full w-full bg-gray-50 object-cover"
-              src={TeamConf}
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="px-6 xl:contents font-raleway ">
-          <div className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8  lg:mr-0 lg:w-full lg:max-w-3xl xl:flex-none  xl:w-1/2 text-white">
+    <main className="relative bg-primary-400" id="workWithUs">
+      <section className="mx-auto max-w-9xl lg:flex lg:justify-between lg:pr-24 lg:ml-80 xl:justify-end">
+        <section className="lg:flex  lg:shrink  xl:absolute xl:inset-y-0 xl:right-1/2 xl:w-1/2 relative h-80 lg:-ml-80 lg:h-auto lg:w-full lg:grow xl:ml-0">
+          <Image
+            className="absolute inset-0 max-w-none h-full w-full object-cover"
+            src={TeamConf}
+            alt="Team Camel Studio"
+          />
+        </section>
+        <section className="px-6 xl:contents font-raleway ">
+          <article className="mx-auto max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8  lg:mr-0 lg:w-full lg:max-w-3xl xl:flex-none  xl:w-1/2 text-white">
             <h1 className=" text-4xl mt-2  font-bold text-white font-thrashand sm:text-6xl ">
               Développer votre projet avec le Camel Studio
             </h1>
@@ -76,10 +74,10 @@ const WorkWithUs = () => {
                 🚀🐪
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </article>
+        </section>
+      </section>
+    </main>
   );
 };
 
