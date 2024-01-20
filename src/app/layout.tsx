@@ -19,7 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
+      <head>
+        <title>Camel Studio : studio de développement numérique</title>
+        <meta
+          name="description"
+          content="studio de développement numérique"
+        ></meta>
+      </head>
       <body className={`${(Raleway_Font.variable, TrashHandFont.variable)} `}>
         {children}
       </body>
